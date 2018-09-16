@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM, {render } from 'react-dom';
+import { render } from 'react-dom';
 
 class App extends Component {
   state = {
@@ -7,8 +7,13 @@ class App extends Component {
   };
 
   render() {
+    const { number } = this.state;
     return (
-      <div>Hello JS world number {this.state.number}!</div>
+      <div>
+        hello JS world
+        {' '}
+        {number}
+      </div>
     );
   }
 }
