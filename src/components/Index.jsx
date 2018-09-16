@@ -8,17 +8,8 @@ class App extends Component {
 
   render() {
     const { number } = this.state;
-    return (
-      <div>
-        hello JS world
-        {' '}
-        {number}
-      </div>
-    );
+    return <div>hello JS world {number}</div>;
   }
 }
 
-render(
-  <App />,
-  document.getElementById('root'),
-);
+render(<App />, document.getElementById('root'));

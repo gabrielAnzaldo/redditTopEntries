@@ -7,11 +7,13 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, './dist'),
   },
-  plugins: [new HtmlWebpackPlugin({
-    hash: true,
-    minify: true,
-    template: './src/index.html',
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      minify: true,
+      template: './src/index.html',
+    }),
+  ],
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
