@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import styles from './index.scss';
 
 class App extends Component {
   state = {
@@ -8,8 +10,13 @@ class App extends Component {
 
   render() {
     const { number } = this.state;
-    return <div>hello JS world {number}</div>;
+    return <div className={styles.container}>hello JS world {number}</div>;
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(
+  <Router>
+    <App />
+  </Router>,
+  document.getElementById('root'),
+);
