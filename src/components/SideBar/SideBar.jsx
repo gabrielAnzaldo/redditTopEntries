@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import PropTypes from 'prop-types';
+import Post from '../Post';
 import styles from '../index.scss';
 
 class SideBar extends Component {
@@ -13,14 +14,13 @@ class SideBar extends Component {
     const { posts } = this.props;
     return (
       <div className={`${styles.split} ${styles.sidebar}`}>
-        <ul>
-          {posts &&
-            posts.map(singlePost => (
-              <li key={singlePost.getIn(['data', 'id'])}>
-                {singlePost.getIn(['data', 'title'])}
-              </li>
-            ))}
-        </ul>
+        {posts &&
+          posts.map(singlePost => (
+            <Post
+              key={singlePost.getIn('data', 'id')}
+              data={singlePost.get('data')}
+            />
+          ))}
       </div>
     );
   }
