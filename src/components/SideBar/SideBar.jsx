@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import ImmutablePropTypes from 'react-immutable-proptypes';
 import PropTypes from 'prop-types';
+import ListItem from '@material-ui/core/ListItem';
+import Divider from '@material-ui/core/Divider';
 import Post from '../Post';
 import styles from '../index.scss';
 
@@ -16,10 +17,10 @@ class SideBar extends Component {
       <div className={`${styles.split} ${styles.sidebar}`}>
         {posts &&
           posts.map(singlePost => (
-            <Post
-              key={singlePost.getIn('data', 'id')}
-              data={singlePost.get('data')}
-            />
+            <ListItem button>
+              <Post key={singlePost.data.id} {...singlePost.data} />
+              <Divider />
+            </ListItem>
           ))}
       </div>
     );
@@ -28,7 +29,13 @@ class SideBar extends Component {
 
 SideBar.propTypes = {
   getTopEntries: PropTypes.func.isRequired,
-  posts: ImmutablePropTypes.list.isRequired,
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      thumbnail: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
+    }),
+  ).isRequired,
 };
 
 export default SideBar;
