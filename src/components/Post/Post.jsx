@@ -12,12 +12,16 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 import styles from './styles.scss';
 
 class Post extends Component {
-  test = () => 34;
+  onSelectPost = () => {
+    const { setSelectedPost, data } = this.props;
+    setSelectedPost(data);
+  };
 
   render() {
-    const { thumbnail, title, author } = this.props;
+    const { data } = this.props;
+    const { thumbnail, title, author } = data;
     return (
-      <Card className={styles.card}>
+      <Card className={styles.card} onClick={this.onSelectPost}>
         <CardHeader
           avatar={
             <Avatar
@@ -49,9 +53,12 @@ class Post extends Component {
 }
 
 Post.propTypes = {
-  thumbnail: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  setSelectedPost: PropTypes.func.isRequired,
+  data: PropTypes.shape({
+    thumbnail: PropTypes.string,
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }).isRequired,
 };
 
 export default Post;

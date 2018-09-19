@@ -1,2 +1,2 @@
 export const GET_TOP_ENTRIES = 'GET_TOP_ENTRIES';
-export const MARK_AS_READED = 'MARK_AS_READED';
+export const SET_SELECTED_POST = 'SET_SELECTED_POST';

@@ -1,3 +1,3 @@
-import Post from './Post';
+import PostContainer from './Post.container';
 
-export default Post;
+export default PostContainer;

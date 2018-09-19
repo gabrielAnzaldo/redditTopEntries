@@ -24,7 +24,7 @@ class SideBar extends Component {
                 to={`/${singlePost.data.id}`}
                 style={{ textDecoration: 'none' }}
               >
-                <Post {...singlePost.data} />
+                <Post data={singlePost.data} />
               </Link>
               <Divider />
             </ListItem>
