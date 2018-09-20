@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
@@ -18,7 +18,7 @@ const store = createStore(
 const App = () => (
   <Fragment>
     <SideBar />
-    <DetailPost />
+    <Route path="/:id" component={DetailPost} />
   </Fragment>
 );
 

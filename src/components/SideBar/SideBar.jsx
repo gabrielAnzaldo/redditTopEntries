@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Post from '../Post';
-import PostContent from '../PostContent';
 import styles from '../index.scss';
 
 class SideBar extends Component {
@@ -29,7 +28,6 @@ class SideBar extends Component {
               <Divider />
             </ListItem>
           ))}
-        <Route path="/:id" component={PostContent} />
       </div>
     );
   }
