@@ -1,14 +1,13 @@
 {
-  "main.css": "/redditTopEntries/static/css/main.0e3e99b8.chunk.css",
-  "main.js": "/redditTopEntries/static/js/main.dd6fe13c.chunk.js",
-  "main.js.map": "/redditTopEntries/static/js/main.dd6fe13c.chunk.js.map",
-  "static/js/1.fa92c112.chunk.js": "/redditTopEntries/static/js/1.fa92c112.chunk.js",
-  "static/js/1.fa92c112.chunk.js.map": "/redditTopEntries/static/js/1.fa92c112.chunk.js.map",
+  "main.css": "/redditTopEntries/static/css/main.715f8164.chunk.css",
+  "main.js": "/redditTopEntries/static/js/main.55c662bc.chunk.js",
+  "main.js.map": "/redditTopEntries/static/js/main.55c662bc.chunk.js.map",
+  "static/js/1.909c2214.chunk.js": "/redditTopEntries/static/js/1.909c2214.chunk.js",
+  "static/js/1.909c2214.chunk.js.map": "/redditTopEntries/static/js/1.909c2214.chunk.js.map",
   "runtime~main.js": "/redditTopEntries/static/js/runtime~main.35a7601f.js",
   "runtime~main.js.map": "/redditTopEntries/static/js/runtime~main.35a7601f.js.map",
-  "static/media/logo.svg": "/redditTopEntries/static/media/logo.5d5d9eef.svg",
-  "static/css/main.0e3e99b8.chunk.css.map": "/redditTopEntries/static/css/main.0e3e99b8.chunk.css.map",
+  "static/css/main.715f8164.chunk.css.map": "/redditTopEntries/static/css/main.715f8164.chunk.css.map",
   "index.html": "/redditTopEntries/index.html",
-  "precache-manifest.ab6ec46e3dc50d1a5127849957801cdc.js": "/redditTopEntries/precache-manifest.ab6ec46e3dc50d1a5127849957801cdc.js",
+  "precache-manifest.7bc2ff725b308d22b8a1b3ee68f4063e.js": "/redditTopEntries/precache-manifest.7bc2ff725b308d22b8a1b3ee68f4063e.js",
   "service-worker.js": "/redditTopEntries/service-worker.js"
 }
