@@ -21,7 +21,7 @@ class SideBar extends Component {
             <ListItem key={singlePost.data.id} button>
               <Link
                 to={`/${singlePost.data.id}`}
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: 'none', width: '100%' }}
               >
                 <Post data={singlePost.data} />
               </Link>
